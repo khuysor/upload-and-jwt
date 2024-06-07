@@ -1,0 +1,17 @@
+server:
+  port: 8001
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/youtube
+    username: postgres
+    password:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+upload:
+  files:
+    path: /Users/vite-sor/Documents/java/image-upload/src/main/resources/
+    extensions: png, jpeg, jpg, gif, mp4
